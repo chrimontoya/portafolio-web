@@ -1,7 +1,7 @@
 <app-nav-bar-logo class="position-absolute"></app-nav-bar-logo>
 <div class="row bg-custom-color">
-    <app-nav-bar class="postition-absolute col-2"></app-nav-bar>
-    <div class="col-10 bg-custom-color row align-items-center">
+    <app-nav-bar class="postition-absolute col-2" (buttonActive)="getMenuActive($event)"></app-nav-bar>
+    <div class="col-10 bg-custom-color row align-items-center" *ngIf="menuActive == menuActiveEnum.SERVICES">
         <!---CONTENIDO AQUI-->
         <div class="row h-50 align-content-center">
             <div class="row col h-100 align-content-center">
@@ -15,4 +15,5 @@
         </div>
         <app-list-service></app-list-service>
     </div>
+    <app-projects class="col-10 bg-custom-color row align-items-center" *ngIf="menuActive == menuActiveEnum.PROJECTS"></app-projects>
 </div>

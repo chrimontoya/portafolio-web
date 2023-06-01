@@ -7,6 +7,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { TemplateComponent } from './pages/template/template.component';
 import { NavBarLogoComponent } from './components/nav-bar-logo/nav-bar-logo.component';
 import { ListServiceComponent } from './components/list-service/list-service.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { CarrouselComponent } from './components/carrousel/carrousel.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ListServiceComponent } from './components/list-service/list-service.com
     NavBarComponent,
     TemplateComponent,
     NavBarLogoComponent,
-    ListServiceComponent
+    ListServiceComponent,
+    ProjectsComponent,
+    CarrouselComponent
   ],
   imports: [
     BrowserModule,

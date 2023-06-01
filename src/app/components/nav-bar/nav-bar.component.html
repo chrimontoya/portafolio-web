@@ -1,16 +1,16 @@
 <div class="d-flex align-items-center vh-100 bg-custom-color">
     <ul class="list-unstyled h-75 d-flex flex-column justify-content-around align-items-center">
         <li>
-          <button class="text-white btn" style="writing-mode: vertical-lr; transform: rotate(-90deg);">SERVICES</button>
+          <button (click)="changeMenu(menuActiveEnum.SERVICES)" class="text-white btn" style="writing-mode: vertical-lr; transform: rotate(-90deg);" [ngClass]="menuActive == menuActiveEnum.SERVICES ? 'btn-primary' : ''">SERVICES</button>
         </li>
         <li>
-          <button class="text-white btn" style="writing-mode: vertical-lr; transform: rotate(-90deg);">PROJECTS</button>
+          <button (click)="changeMenu(menuActiveEnum.PROJECTS)" class="text-white btn" style="writing-mode: vertical-lr; transform: rotate(-90deg);" [ngClass]="menuActive == menuActiveEnum.PROJECTS ? 'btn-primary' : ''">PROJECTS</button>
         </li>
         <li>
-          <button class="text-white btn" style="writing-mode: vertical-lr; transform: rotate(-90deg);">SKILLS</button>
+          <button (click)="changeMenu(menuActiveEnum.SKILLS)" class="text-white btn" style="writing-mode: vertical-lr; transform: rotate(-90deg);" [ngClass]="menuActive == menuActiveEnum.SKILLS ? 'btn-primary' : ''">SKILLS</button>
         </li>
         <li>
-          <button class="text-white btn" style="writing-mode: vertical-lr; transform: rotate(-90deg);">ABOUT</button>
+          <button (click)="changeMenu(menuActiveEnum.ABOUT)" class="text-white btn" style="writing-mode: vertical-lr; transform: rotate(-90deg);" [ngClass]="menuActive == menuActiveEnum.ABOUT ? 'btn-primary' : ''">ABOUT</button>
         </li>
       </ul>    
 </div>
