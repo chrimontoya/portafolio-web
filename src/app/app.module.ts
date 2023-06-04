@@ -9,6 +9,8 @@ import { NavBarLogoComponent } from './components/nav-bar-logo/nav-bar-logo.comp
 import { ListServiceComponent } from './components/list-service/list-service.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { CarrouselComponent } from './components/carrousel/carrousel.component';
+import { SkillsComponent } from './pages/skills/skills.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CarrouselComponent } from './components/carrousel/carrousel.component';
     NavBarLogoComponent,
     ListServiceComponent,
     ProjectsComponent,
-    CarrouselComponent
+    CarrouselComponent,
+    SkillsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
