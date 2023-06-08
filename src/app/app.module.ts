@@ -11,6 +11,10 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { AboutComponent } from './pages/about/about.component';
+import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import {AngularFireModule} from "@angular/fire/compat";
+import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
 
 @NgModule({
   declarations: [
@@ -26,7 +30,23 @@ import { AboutComponent } from './pages/about/about.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // provideFirebaseApp(() => initializeApp({   apiKey: "AIzaSyAhgXh7QWtGqmoxjrBEDmuw282rU3IO9EA",
+    //   authDomain: "portafolio-8c8ff.firebaseapp.com",
+    //   projectId: "portafolio-8c8ff",
+    //   storageBucket: "portafolio-8c8ff.appspot.com",
+    //   messagingSenderId: "915445864356",
+    //   appId: "1:915445864356:web:65656ee71599c47e899331",
+    //   measurementId: "G-1P5LDNG689" })),
+    // provideFirestore(() => getFirestore()),
+    AngularFireModule.initializeApp({   apiKey: "AIzaSyAhgXh7QWtGqmoxjrBEDmuw282rU3IO9EA",
+      authDomain: "portafolio-8c8ff.firebaseapp.com",
+      projectId: "portafolio-8c8ff",
+      storageBucket: "portafolio-8c8ff.appspot.com",
+      messagingSenderId: "915445864356",
+      appId: "1:915445864356:web:65656ee71599c47e899331",
+      measurementId: "G-1P5LDNG689" }),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
