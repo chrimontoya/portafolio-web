@@ -11,8 +11,6 @@ import {AngularFirestore, AngularFirestoreCollection} from "@angular/fire/compat
 
 
 export class AppComponent {
-  // item$: Observable<any[]>;
-  //  firestore: Firestore = inject(Firestore);
   servicesPath: string = "/services";
   servicesRef!: AngularFirestoreCollection;
 
@@ -30,9 +28,9 @@ export class AppComponent {
     //TRAER UN DOCUMENTO POR ID
     //this.servicesRef.doc('2').get().subscribe(res =>console.log(res.data()))
     // ACTUALIZAR NOMBRE DE UN DOCUMENTO POR ID
-    //this.servicesRef.doc('2').update({name: 'PERRO CULIAO'}).then(res => console.log(res));
+    //this.servicesRef.doc('2').update({name: 'PERRO'}).then(res => console.log(res));
     // ACTUALIZAR UN DOCUMENTO POR ID CON UN DOCUMENTO NUEVO
-    //this.servicesRef.doc('2').set({name: 'PERRO CULIAO'}).then(res => console.log(res));
+    //this.servicesRef.doc('2').set({name: 'PERRO'}).then(res => console.log(res));
     // ELIMINAR UN DOCUMENTO POR ID
     //this.servicesRef.doc('2').delete().then(res => console.log(res));
 

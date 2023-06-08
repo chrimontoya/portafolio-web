@@ -7,12 +7,11 @@ import { MenuActive } from 'src/app/enums/menu-active.enum';
   styleUrls: ['./template.component.css']
 })
 export class TemplateComponent {
-  menuActive: number = 1;
+  menuActive: number = 0;
   menuActiveEnum = MenuActive;
 
   getMenuActive(menuActive: number){
     this.menuActive = menuActive;
-    console.log(menuActive);
   }
 
 

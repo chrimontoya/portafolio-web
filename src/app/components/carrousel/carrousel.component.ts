@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {ProjectInterface} from "../../models/project.interface";
 
 @Component({
   selector: 'app-carrousel',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./carrousel.component.css']
 })
 export class CarrouselComponent {
-
+  @Input() projects!: ProjectInterface[];
 }
